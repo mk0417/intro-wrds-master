@@ -1,0 +1,123 @@
+#+TITLE: Introduction to WRDS
+#+OPTIONS: email:nil author:nil num:t ^:nil
+#+DESCRIPTION: Master WRDS workshop Nov2019
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+# If use dark theme, use the setting below
+# #+HTML_HEAD: <style>pre.src{background:#666666;color:white;} </style>
+
+* What is WRDS? 
+Whaton Research Data Service
+#+ATTR_HTML: :width 90% :height 90%
+[[./png/website.png]]
+ 
+* How to access
+- WRDS website
+- X-WRDS connection
+- Unix (not open to master students)
+
+** WRDS website
+https://wrds-www.wharton.upenn.edu/
+
+- User friendly interface
+- Easy to use
+
+** X-WRDS connection
+- What is *X*?
+  - Python
+  - R
+  - SAS
+  - Stata
+- Need knowledge of computer language or software skills
+
+** Unix
+- Need to konw some Unix commands
+
+* How to search data
+- Concept
+  
+#+ATTR_HTML: :width 90% :height 90%
+[[./png/concept1.png]]
+
+#+ATTR_HTML: :width 90% :height 90%
+[[./png/concept2.png]]
+
+* Demo
+- CRSP
+- Compustat
+
+** Understand CRSP
+*** Overview
+- USA
+- 1925 to 2018
+- stock price, volume, number of shares, ...
+*** =exchcd=: stock exchange code
+| exchcd | stock exchange |
+|--------+----------------|
+|      1 | NYSE           |
+|      2 | AMEX           |
+|      3 | NASDAQ         |
+*** =shrcd=: share code
+| shrcd | share type    |
+|-------+---------------|
+|    10 | common shares |
+|    11 | common shares |
+*** =prc=: stock price
+- Negative stock price
+- Take absolute value to convert negative price to positive
+*** Market value
+*market value* = stock price * number of shares
+
+$$\text{market value} = \left|prc\right| \times shrout$$
+
+** Understand Compustat
+*** Overview
+- Compustat North Amercia (NA)
+  - USA and Canada
+  - *Fundamental Annual*: accounting information
+  - *Security Daily/Monthly*: stock price
+- Compusata Global
+  - China, France, Nigeria, Thailand, UK, ...
+  - *Fundamental Annual*: accounting information
+  - *Security Daily*: stock price
+*** Compustat-security daily/monthly
+- =tpci=: share type
+  - tpci = 0: common shares
+- =fic=: country code
+| fic | Name           |
+|-----+----------------|
+| GBR | United Kingdom |
+| DEU | Germany        |
+
+Country code list: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
+- =prccd=: unadjusted closing price
+  - Unadjusted stock price cannot reflect true performance of stock return
+  - Need to adjust stock price before calculating stock return
+#+ATTR_HTML: :width 90% :height 90%
+[[./png/adjprc.png]]
+- Need another two variables to adjust stock price
+  - =ajexdi=: adjusted factor
+  - =trfd=: return factor
+
+$$\text{adjusted price} = \frac{prccd}{ajexdi} \times trfd$$
+  
+** Download data from WRDS website
+- In class demo.
+
+** Download data by Python-WRDS
+#+begin_src python
+  import pandas as pd
+  import wrds
+
+  conn = wrds.Connection()
+  crsp = conn.raw_sql("""
+   select permno, date, ret, abs(prc) as price_adj, shrout 
+   from crsp.msf
+   where exchcd between 1 and 3
+    and shrcd between 10 and 11
+    and date>='2015-01-01'
+  """)
+#+end_src
+
+* Help
+- My email: p.li@leeds.ac.uk
+- My Github: https://github.com/mk0417
