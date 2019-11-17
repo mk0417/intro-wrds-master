@@ -5,9 +5,23 @@
 # If use dark theme, use the setting below
 # #+HTML_HEAD: <style>pre.src{background:#666666;color:white;} </style>
 
+* Facts: empirical research and data
+** Empirical research
+#+ATTR_HTML: :width 80% :height 80%
+[[./png/publication.png]]
+
+** Popular data in finance
+#+ATTR_HTML: :width 80% :height 80%
+[[./png/popdata.png]]
+
+** Where to find data
+#+begin_center
+*WRDS*
+#+end_center
+
 * What is WRDS? 
-Whaton Research Data Service
-#+ATTR_HTML: :width 90% :height 90%
+Wharton Research Data Service
+#+ATTR_HTML: :width 80% :height 80%
 [[./png/website.png]]
  
 * How to access
@@ -30,15 +44,15 @@ https://wrds-www.wharton.upenn.edu/
 - Need knowledge of computer language or software skills
 
 ** Unix
-- Need to konw some Unix commands
+- Need to know some Unix commands
 
 * How to search data
 - Concept
   
-#+ATTR_HTML: :width 90% :height 90%
+#+ATTR_HTML: :width 80% :height 80%
 [[./png/concept1.png]]
 
-#+ATTR_HTML: :width 90% :height 90%
+#+ATTR_HTML: :width 80% :height 80%
 [[./png/concept2.png]]
 
 * Demo
@@ -75,7 +89,7 @@ $$\text{market value} = \left|prc\right| \times shrout$$
   - USA and Canada
   - *Fundamental Annual*: accounting information
   - *Security Daily/Monthly*: stock price
-- Compusata Global
+- Compustat Global
   - China, France, Nigeria, Thailand, UK, ...
   - *Fundamental Annual*: accounting information
   - *Security Daily*: stock price
@@ -92,7 +106,7 @@ Country code list: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
 - =prccd=: unadjusted closing price
   - Unadjusted stock price cannot reflect true performance of stock return
   - Need to adjust stock price before calculating stock return
-#+ATTR_HTML: :width 90% :height 90%
+#+ATTR_HTML: :width 80% :height 80%
 [[./png/adjprc.png]]
 - Need another two variables to adjust stock price
   - =ajexdi=: adjusted factor
@@ -117,6 +131,14 @@ $$\text{adjusted price} = \frac{prccd}{ajexdi} \times trfd$$
     and date>='2015-01-01'
   """)
 #+end_src
+
+** The problem of Excel
+There are two problems if you download data in Excel:
+- Missing leading zeros
+- Scientific notation (E-notation)
+
+#+ATTR_HTML: :width 80% :height 80%
+[[./png/cusip_error.png]]
 
 * Help
 - My email: p.li@leeds.ac.uk
