@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-11-10 Sun 21:22 -->
+<!-- 2019-11-17 Sun 14:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Introduction to WRDS</title>
@@ -254,58 +254,104 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7d3ab4f">1. What is WRDS?</a></li>
-<li><a href="#orgd3df829">2. How to access</a>
+<li><a href="#orgc1fc46a">1. Facts: empirical research and data</a>
 <ul>
-<li><a href="#org7365607">2.1. WRDS website</a></li>
-<li><a href="#org8ac7233">2.2. X-WRDS connection</a></li>
-<li><a href="#orga3c4e68">2.3. Unix</a></li>
+<li><a href="#org06c4603">1.1. Empirical research</a></li>
+<li><a href="#orga4d541a">1.2. Popular data in finance</a></li>
+<li><a href="#org5ee6817">1.3. Where to find data</a></li>
 </ul>
 </li>
-<li><a href="#orgfde545a">3. How to search data</a></li>
-<li><a href="#orgaa78ec5">4. Demo</a>
+<li><a href="#org9e12865">2. What is WRDS?</a></li>
+<li><a href="#orge5c8d88">3. How to access</a>
 <ul>
-<li><a href="#org4542ea5">4.1. Understand CRSP</a>
-<ul>
-<li><a href="#org2bf2e09">4.1.1. Overview</a></li>
-<li><a href="#org577bacd">4.1.2. <code>exchcd</code>: stock exchange code</a></li>
-<li><a href="#orga931a27">4.1.3. <code>shrcd</code>: share code</a></li>
-<li><a href="#orgf29ab9f">4.1.4. <code>prc</code>: stock price</a></li>
-<li><a href="#orge34d4cc">4.1.5. Market value</a></li>
+<li><a href="#org7a5c1ce">3.1. WRDS website</a></li>
+<li><a href="#org202f173">3.2. X-WRDS connection</a></li>
+<li><a href="#org4f49b58">3.3. Unix</a></li>
 </ul>
 </li>
-<li><a href="#org6a444a5">4.2. Understand Compustat</a>
+<li><a href="#org9c03dfb">4. How to search data</a></li>
+<li><a href="#org5baffb7">5. Demo</a>
 <ul>
-<li><a href="#org3484d2c">4.2.1. Overview</a></li>
-<li><a href="#orgc5722b2">4.2.2. Compustat-security daily/monthly</a></li>
+<li><a href="#orgcc820d6">5.1. Understand CRSP</a>
+<ul>
+<li><a href="#org3bc441e">5.1.1. Overview</a></li>
+<li><a href="#orgb3f088f">5.1.2. <code>exchcd</code>: stock exchange code</a></li>
+<li><a href="#orgf6dfca2">5.1.3. <code>shrcd</code>: share code</a></li>
+<li><a href="#org3c0f49f">5.1.4. <code>prc</code>: stock price</a></li>
+<li><a href="#org014c16d">5.1.5. Market value</a></li>
 </ul>
 </li>
-<li><a href="#org6919d71">4.3. Download data from WRDS website</a></li>
-<li><a href="#org9cb5c46">4.4. Download data by Python-WRDS</a></li>
+<li><a href="#org6397c97">5.2. Understand Compustat</a>
+<ul>
+<li><a href="#orga212d3e">5.2.1. Overview</a></li>
+<li><a href="#org04bf376">5.2.2. Compustat-security daily/monthly</a></li>
 </ul>
 </li>
-<li><a href="#org36e5dbc">5. Help</a></li>
+<li><a href="#orge924bbc">5.3. Download data from WRDS website</a></li>
+<li><a href="#orga7fd0e5">5.4. Download data by Python-WRDS</a></li>
+<li><a href="#org054e549">5.5. The problem of Excel</a></li>
+</ul>
+</li>
+<li><a href="#org57503e9">6. Help</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7d3ab4f" class="outline-2">
-<h2 id="org7d3ab4f"><span class="section-number-2">1</span> What is WRDS?</h2>
+<div id="outline-container-orgc1fc46a" class="outline-2">
+<h2 id="orgc1fc46a"><span class="section-number-2">1</span> Facts: empirical research and data</h2>
 <div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org06c4603" class="outline-3">
+<h3 id="org06c4603"><span class="section-number-3">1.1</span> Empirical research</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="figure">
+<p><img src="./png/publication.png" alt="publication.png" width="80%" height="80%" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga4d541a" class="outline-3">
+<h3 id="orga4d541a"><span class="section-number-3">1.2</span> Popular data in finance</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<div class="figure">
+<p><img src="./png/popdata.png" alt="popdata.png" width="80%" height="80%" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5ee6817" class="outline-3">
+<h3 id="org5ee6817"><span class="section-number-3">1.3</span> Where to find data</h3>
+<div class="outline-text-3" id="text-1-3">
+<div class="org-center">
 <p>
-Whaton Research Data Service
+<b>WRDS</b>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9e12865" class="outline-2">
+<h2 id="org9e12865"><span class="section-number-2">2</span> What is WRDS?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Wharton Research Data Service
 </p>
 
 <div class="figure">
-<p><img src="./png/website.png" alt="website.png" width="90%" height="90%" />
+<p><img src="./png/website.png" alt="website.png" width="80%" height="80%" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgd3df829" class="outline-2">
-<h2 id="orgd3df829"><span class="section-number-2">2</span> How to access</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orge5c8d88" class="outline-2">
+<h2 id="orge5c8d88"><span class="section-number-2">3</span> How to access</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>WRDS website</li>
 <li>X-WRDS connection</li>
@@ -313,9 +359,9 @@ Whaton Research Data Service
 </ul>
 </div>
 
-<div id="outline-container-org7365607" class="outline-3">
-<h3 id="org7365607"><span class="section-number-3">2.1</span> WRDS website</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org7a5c1ce" class="outline-3">
+<h3 id="org7a5c1ce"><span class="section-number-3">3.1</span> WRDS website</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 <a href="https://wrds-www.wharton.upenn.edu/">https://wrds-www.wharton.upenn.edu/</a>
 </p>
@@ -327,9 +373,9 @@ Whaton Research Data Service
 </div>
 </div>
 
-<div id="outline-container-org8ac7233" class="outline-3">
-<h3 id="org8ac7233"><span class="section-number-3">2.2</span> X-WRDS connection</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org202f173" class="outline-3">
+<h3 id="org202f173"><span class="section-number-3">3.2</span> X-WRDS connection</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>What is <b>X</b>?
 <ul class="org-ul">
@@ -343,53 +389,53 @@ Whaton Research Data Service
 </div>
 </div>
 
-<div id="outline-container-orga3c4e68" class="outline-3">
-<h3 id="orga3c4e68"><span class="section-number-3">2.3</span> Unix</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org4f49b58" class="outline-3">
+<h3 id="org4f49b58"><span class="section-number-3">3.3</span> Unix</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
-<li>Need to konw some Unix commands</li>
+<li>Need to know some Unix commands</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgfde545a" class="outline-2">
-<h2 id="orgfde545a"><span class="section-number-2">3</span> How to search data</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org9c03dfb" class="outline-2">
+<h2 id="org9c03dfb"><span class="section-number-2">4</span> How to search data</h2>
+<div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Concept</li>
 </ul>
 
 
 <div class="figure">
-<p><img src="./png/concept1.png" alt="concept1.png" width="90%" height="90%" />
+<p><img src="./png/concept1.png" alt="concept1.png" width="80%" height="80%" />
 </p>
 </div>
 
 
 <div class="figure">
-<p><img src="./png/concept2.png" alt="concept2.png" width="90%" height="90%" />
+<p><img src="./png/concept2.png" alt="concept2.png" width="80%" height="80%" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgaa78ec5" class="outline-2">
-<h2 id="orgaa78ec5"><span class="section-number-2">4</span> Demo</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org5baffb7" class="outline-2">
+<h2 id="org5baffb7"><span class="section-number-2">5</span> Demo</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>CRSP</li>
 <li>Compustat</li>
 </ul>
 </div>
 
-<div id="outline-container-org4542ea5" class="outline-3">
-<h3 id="org4542ea5"><span class="section-number-3">4.1</span> Understand CRSP</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-orgcc820d6" class="outline-3">
+<h3 id="orgcc820d6"><span class="section-number-3">5.1</span> Understand CRSP</h3>
+<div class="outline-text-3" id="text-5-1">
 </div>
-<div id="outline-container-org2bf2e09" class="outline-4">
-<h4 id="org2bf2e09"><span class="section-number-4">4.1.1</span> Overview</h4>
-<div class="outline-text-4" id="text-4-1-1">
+<div id="outline-container-org3bc441e" class="outline-4">
+<h4 id="org3bc441e"><span class="section-number-4">5.1.1</span> Overview</h4>
+<div class="outline-text-4" id="text-5-1-1">
 <ul class="org-ul">
 <li>USA</li>
 <li>1925 to 2018</li>
@@ -397,9 +443,9 @@ Whaton Research Data Service
 </ul>
 </div>
 </div>
-<div id="outline-container-org577bacd" class="outline-4">
-<h4 id="org577bacd"><span class="section-number-4">4.1.2</span> <code>exchcd</code>: stock exchange code</h4>
-<div class="outline-text-4" id="text-4-1-2">
+<div id="outline-container-orgb3f088f" class="outline-4">
+<h4 id="orgb3f088f"><span class="section-number-4">5.1.2</span> <code>exchcd</code>: stock exchange code</h4>
+<div class="outline-text-4" id="text-5-1-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -433,9 +479,9 @@ Whaton Research Data Service
 </table>
 </div>
 </div>
-<div id="outline-container-orga931a27" class="outline-4">
-<h4 id="orga931a27"><span class="section-number-4">4.1.3</span> <code>shrcd</code>: share code</h4>
-<div class="outline-text-4" id="text-4-1-3">
+<div id="outline-container-orgf6dfca2" class="outline-4">
+<h4 id="orgf6dfca2"><span class="section-number-4">5.1.3</span> <code>shrcd</code>: share code</h4>
+<div class="outline-text-4" id="text-5-1-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -464,18 +510,18 @@ Whaton Research Data Service
 </table>
 </div>
 </div>
-<div id="outline-container-orgf29ab9f" class="outline-4">
-<h4 id="orgf29ab9f"><span class="section-number-4">4.1.4</span> <code>prc</code>: stock price</h4>
-<div class="outline-text-4" id="text-4-1-4">
+<div id="outline-container-org3c0f49f" class="outline-4">
+<h4 id="org3c0f49f"><span class="section-number-4">5.1.4</span> <code>prc</code>: stock price</h4>
+<div class="outline-text-4" id="text-5-1-4">
 <ul class="org-ul">
 <li>Negative stock price</li>
 <li>Take absolute value to convert negative price to positive</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge34d4cc" class="outline-4">
-<h4 id="orge34d4cc"><span class="section-number-4">4.1.5</span> Market value</h4>
-<div class="outline-text-4" id="text-4-1-5">
+<div id="outline-container-org014c16d" class="outline-4">
+<h4 id="org014c16d"><span class="section-number-4">5.1.5</span> Market value</h4>
+<div class="outline-text-4" id="text-5-1-5">
 <p>
 <b>market value</b> = stock price * number of shares
 </p>
@@ -487,13 +533,13 @@ Whaton Research Data Service
 </div>
 </div>
 
-<div id="outline-container-org6a444a5" class="outline-3">
-<h3 id="org6a444a5"><span class="section-number-3">4.2</span> Understand Compustat</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-org6397c97" class="outline-3">
+<h3 id="org6397c97"><span class="section-number-3">5.2</span> Understand Compustat</h3>
+<div class="outline-text-3" id="text-5-2">
 </div>
-<div id="outline-container-org3484d2c" class="outline-4">
-<h4 id="org3484d2c"><span class="section-number-4">4.2.1</span> Overview</h4>
-<div class="outline-text-4" id="text-4-2-1">
+<div id="outline-container-orga212d3e" class="outline-4">
+<h4 id="orga212d3e"><span class="section-number-4">5.2.1</span> Overview</h4>
+<div class="outline-text-4" id="text-5-2-1">
 <ul class="org-ul">
 <li>Compustat North Amercia (NA)
 <ul class="org-ul">
@@ -501,7 +547,7 @@ Whaton Research Data Service
 <li><b>Fundamental Annual</b>: accounting information</li>
 <li><b>Security Daily/Monthly</b>: stock price</li>
 </ul></li>
-<li>Compusata Global
+<li>Compustat Global
 <ul class="org-ul">
 <li>China, France, Nigeria, Thailand, UK, &#x2026;</li>
 <li><b>Fundamental Annual</b>: accounting information</li>
@@ -510,9 +556,9 @@ Whaton Research Data Service
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc5722b2" class="outline-4">
-<h4 id="orgc5722b2"><span class="section-number-4">4.2.2</span> Compustat-security daily/monthly</h4>
-<div class="outline-text-4" id="text-4-2-2">
+<div id="outline-container-org04bf376" class="outline-4">
+<h4 id="org04bf376"><span class="section-number-4">5.2.2</span> Compustat-security daily/monthly</h4>
+<div class="outline-text-4" id="text-5-2-2">
 <ul class="org-ul">
 <li><code>tpci</code>: share type
 <ul class="org-ul">
@@ -559,7 +605,7 @@ Country code list: <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ht
 </ul>
 
 <div class="figure">
-<p><img src="./png/adjprc.png" alt="adjprc.png" width="90%" height="90%" />
+<p><img src="./png/adjprc.png" alt="adjprc.png" width="80%" height="80%" />
 </p>
 </div>
 <ul class="org-ul">
@@ -577,18 +623,18 @@ Country code list: <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ht
 </div>
 </div>
 
-<div id="outline-container-org6919d71" class="outline-3">
-<h3 id="org6919d71"><span class="section-number-3">4.3</span> Download data from WRDS website</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-orge924bbc" class="outline-3">
+<h3 id="orge924bbc"><span class="section-number-3">5.3</span> Download data from WRDS website</h3>
+<div class="outline-text-3" id="text-5-3">
 <ul class="org-ul">
 <li>In class demo.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org9cb5c46" class="outline-3">
-<h3 id="org9cb5c46"><span class="section-number-3">4.4</span> Download data by Python-WRDS</h3>
-<div class="outline-text-3" id="text-4-4">
+<div id="outline-container-orga7fd0e5" class="outline-3">
+<h3 id="orga7fd0e5"><span class="section-number-3">5.4</span> Download data by Python-WRDS</h3>
+<div class="outline-text-3" id="text-5-4">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #e45649;">import</span> pandas <span style="color: #e45649;">as</span> pd
 <span style="color: #e45649;">import</span> wrds
@@ -605,11 +651,30 @@ Country code list: <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ht
 </div>
 </div>
 </div>
+
+<div id="outline-container-org054e549" class="outline-3">
+<h3 id="org054e549"><span class="section-number-3">5.5</span> The problem of Excel</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+There are two problems if you download data in Excel:
+</p>
+<ul class="org-ul">
+<li>Missing leading zeros</li>
+<li>Scientific notation (E-notation)</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./png/cusip_error.png" alt="cusip_error.png" width="80%" height="80%" />
+</p>
+</div>
+</div>
+</div>
 </div>
 
-<div id="outline-container-org36e5dbc" class="outline-2">
-<h2 id="org36e5dbc"><span class="section-number-2">5</span> Help</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org57503e9" class="outline-2">
+<h2 id="org57503e9"><span class="section-number-2">6</span> Help</h2>
+<div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>My email: p.li@leeds.ac.uk</li>
 <li>My Github: <a href="https://github.com/mk0417">https://github.com/mk0417</a></li>
@@ -618,7 +683,7 @@ Country code list: <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ht
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2019-11-10 Sun 21:22</p>
+<p class="date">Created: 2019-11-17 Sun 14:21</p>
 </div>
 </body>
 </html>
