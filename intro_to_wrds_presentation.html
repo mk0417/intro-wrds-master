@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to WRDS</title>
+<meta name="author" content="Peng"/>
+<meta name="description" content="Master workshop Dec2019 - introduction to WRDS"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///Users/ml/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///Users/ml/reveal.js/css/theme/serif.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///Users/ml/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+Introduction to WRDS
+</section>
+<section id="table-of-contents-section">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-1">1. Facts: empirical research and data</a></li>
+<li><a href="#/slide-2">2. What is WRDS?</a></li>
+<li><a href="#/slide-3">3. How to access</a></li>
+<li><a href="#/slide-4">4. How to search data</a></li>
+<li><a href="#/slide-5">5. Demo</a></li>
+<li><a href="#/slide-6">6. Help</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Facts: empirical research and data</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1</span> Empirical research</h3>
+
+<div class="figure">
+<p><img src="./png/publication.png" alt="publication.png" width="80%" height="80%" />
+</p>
+</div>
+
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2</span> Popular data in finance</h3>
+
+<div class="figure">
+<p><img src="./png/popdata.png" alt="popdata.png" width="80%" height="80%" />
+</p>
+</div>
+
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3</span> Where to find data</h3>
+<div class="org-center">
+<p>
+<b>WRDS</b>
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2</span> What is WRDS?</h2>
+<p>
+Wharton Research Data Service
+</p>
+
+<div class="figure">
+<p><img src="./png/website.png" alt="website.png" width="80%" height="80%" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3</span> How to access</h2>
+<ul>
+<li>WRDS website</li>
+<li>X-WRDS connection</li>
+<li>Unix (not open to master students)</li>
+
+</ul>
+
+</section>
+<section id="slide-3-1">
+<h3 id="3-1"><span class="section-number-3">3.1</span> WRDS website</h3>
+<p>
+<a href="https://wrds-www.wharton.upenn.edu/">https://wrds-www.wharton.upenn.edu/</a>
+</p>
+
+<ul>
+<li>User friendly interface</li>
+<li>Easy to use</li>
+
+</ul>
+
+</section>
+<section id="slide-3-2">
+<h3 id="3-2"><span class="section-number-3">3.2</span> X-WRDS connection</h3>
+<ul>
+<li>What is <b>X</b>?
+<ul>
+<li>Python</li>
+<li>R</li>
+<li>SAS</li>
+<li>Stata</li>
+
+</ul></li>
+<li>Need knowledge of computer language or software skills</li>
+
+</ul>
+
+</section>
+<section id="slide-3-3">
+<h3 id="3-3"><span class="section-number-3">3.3</span> Unix</h3>
+<ul>
+<li>Need to know some Unix commands</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4</span> How to search data</h2>
+<ul>
+<li>Concept</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="./png/concept1.png" alt="concept1.png" width="80%" height="80%" />
+</p>
+</div>
+
+</section>
+<section>
+
+<div class="figure">
+<p><img src="./png/concept2.png" alt="concept2.png" width="80%" height="80%" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5</span> Demo</h2>
+<ul>
+<li>CRSP</li>
+<li>Compustat</li>
+
+</ul>
+
+</section>
+<section id="slide-5-1">
+<h3 id="5-1"><span class="section-number-3">5.1</span> Understand CRSP</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+</section>
+<section id="slide-5-1-1">
+<h4 id="5-1-1"><span class="section-number-4">5.1.1</span> Overview</h4>
+<ul>
+<li>USA</li>
+<li>1925 to 2018</li>
+<li>stock price, volume, number of shares, &#x2026;</li>
+
+</ul>
+</section>
+<section id="slide-5-1-2">
+<h4 id="5-1-2"><span class="section-number-4">5.1.2</span> <code>exchcd</code>: stock exchange code</h4>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">exchcd</th>
+<th scope="col" class="org-left">stock exchange</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">NYSE</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">AMEX</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">NASDAQ</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-5-1-3">
+<h4 id="5-1-3"><span class="section-number-4">5.1.3</span> <code>shrcd</code>: share code</h4>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">shrcd</th>
+<th scope="col" class="org-left">share type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">common shares</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">common shares</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-5-1-4">
+<h4 id="5-1-4"><span class="section-number-4">5.1.4</span> <code>prc</code>: stock price</h4>
+<ul>
+<li>Negative stock price</li>
+<li>Take absolute value to convert negative price to positive</li>
+
+</ul>
+</section>
+<section id="slide-5-1-5">
+<h4 id="5-1-5"><span class="section-number-4">5.1.5</span> Market value</h4>
+<p>
+<b>market value</b> = stock price * number of shares
+</p>
+
+<p>
+<img src="ltximg/intro_to_wrds_presentation_358b28cab84aac0d9652ca43b3ce6d147eee578b.png" alt="intro_to_wrds_presentation_358b28cab84aac0d9652ca43b3ce6d147eee578b.png" />
+</p>
+
+</section>
+<section id="slide-5-2">
+<h3 id="5-2"><span class="section-number-3">5.2</span> Understand Compustat</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+</section>
+<section id="slide-5-2-1">
+<h4 id="5-2-1"><span class="section-number-4">5.2.1</span> Overview</h4>
+<ul>
+<li>Compustat North Amercia (NA)
+<ul>
+<li>USA and Canada</li>
+<li><b>Fundamental Annual</b>: accounting information</li>
+<li><b>Security Daily/Monthly</b>: stock price</li>
+
+</ul></li>
+<li>Compustat Global
+<ul>
+<li>China, France, Nigeria, Thailand, UK, &#x2026;</li>
+<li><b>Fundamental Annual</b>: accounting information</li>
+<li><b>Security Daily</b>: stock price</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-5-2-2">
+<h4 id="5-2-2"><span class="section-number-4">5.2.2</span> Compustat-security daily/monthly</h4>
+<ul>
+<li><code>tpci</code>: share type
+<ul>
+<li>tpci = 0: common shares</li>
+
+</ul></li>
+<li><code>fic</code>: country code</li>
+
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">fic</th>
+<th scope="col" class="org-left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">GBR</td>
+<td class="org-left">United Kingdom</td>
+</tr>
+
+<tr>
+<td class="org-left">DEU</td>
+<td class="org-left">Germany</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Country code list: <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3</a>
+</p>
+</section>
+<section>
+<ul>
+<li><code>prccd</code>: unadjusted closing price
+<ul>
+<li>Unadjusted stock price cannot reflect true performance of stock return</li>
+<li>Need to adjust stock price before calculating stock return</li>
+
+</ul></li>
+
+</ul>
+
+<div class="figure">
+<p><img src="./png/adjprc.png" alt="adjprc.png" width="80%" height="80%" />
+</p>
+</div>
+<ul>
+<li>Need another two variables to adjust stock price
+<ul>
+<li><code>ajexdi</code>: adjusted factor</li>
+<li><code>trfd</code>: return factor</li>
+
+</ul></li>
+
+</ul>
+
+<p>
+<img src="ltximg/intro_to_wrds_presentation_3afcede792aa226ae97a5cdc6fba69caf39385b9.png" alt="intro_to_wrds_presentation_3afcede792aa226ae97a5cdc6fba69caf39385b9.png" />
+</p>
+
+</section>
+<section id="slide-5-3">
+<h3 id="5-3"><span class="section-number-3">5.3</span> Download data from WRDS website</h3>
+<ul>
+<li>In class demo.</li>
+
+</ul>
+
+</section>
+<section id="slide-5-4">
+<h3 id="5-4"><span class="section-number-3">5.4</span> Download data by Python-WRDS</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"><span style="color: #e45649;">import</span> pandas <span style="color: #e45649;">as</span> pd
+<span style="color: #e45649;">import</span> wrds
+
+<span style="color: #6a1868;">conn</span> = wrds.Connection<span style="color: #4078f2;">()</span>
+<span style="color: #6a1868;">crsp</span> = conn.raw_sql<span style="color: #4078f2;">(</span><span style="color: #50a14f;">"""</span>
+<span style="color: #50a14f;"> select permno, date, ret, abs(prc) as price_adj, shrout </span>
+<span style="color: #50a14f;"> from crsp.msf</span>
+<span style="color: #50a14f;"> where exchcd between 1 and 3</span>
+<span style="color: #50a14f;">  and shrcd between 10 and 11</span>
+<span style="color: #50a14f;">  and date&gt;='2015-01-01'</span>
+<span style="color: #50a14f;">"""</span><span style="color: #4078f2;">)</span>
+</pre>
+</div>
+
+</section>
+<section id="slide-5-5">
+<h3 id="5-5"><span class="section-number-3">5.5</span> The problem of Excel</h3>
+<p>
+Two problems if you download data in Excel:
+</p>
+<ul>
+<li>Missing leading zeros</li>
+<li>Scientific notation (E-notation)</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="./png/cusip_error.png" alt="cusip_error.png" width="80%" height="80%" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6</span> Help</h2>
+<ul>
+<li>My email: p.li@leeds.ac.uk</li>
+<li>My Github: <a href="https://github.com/mk0417">https://github.com/mk0417</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///Users/ml/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///Users/ml/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+margin: 0.10,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'file:///Users/ml/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///Users/ml/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///Users/ml/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///Users/ml/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///Users/ml/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
